@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-black: #020617;
+  --color-brand-orange: #FF9A00;
+  --color-brand-orange-light: rgba(255, 154, 0, 0.15);
+  --color-brand-orange-glow: rgba(255, 154, 0, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom global styles for futuristic look */
+body {
+  background-color: #020617;
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* Glowing scrollbar for extra premium tech aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9A00;
+}
+
+/* Grid overlay background */
+.grid-bg {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(rgba(255,154,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,154,0,0.03) 1px, transparent 1px);
+  opacity: 0.45;
+}
+
+/* Subtle dot layout */
+.dot-bg {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 154, 0, 0.06) 1.2px, transparent 1.2px);
+}
+
+/* Custom glow pulse helper */
+.glow-pulse-amber {
+  box-shadow: 0 0 20px rgba(255, 154, 0, 0.15);
+  transition: all 0.5s ease-in-out;
+}
+.glow-pulse-amber:hover {
+  box-shadow: 0 0 35px rgba(255, 154, 0, 0.45);
+}
+
+/* Hide styling overlay scrollbars if needed */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
