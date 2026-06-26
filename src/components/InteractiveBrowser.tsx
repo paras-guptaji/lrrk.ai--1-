@@ -151,7 +151,7 @@ export default function InteractiveBrowser() {
           }}
         >
           <img 
-            src="/images/showcase.png" 
+            src="/images/showcase.webp" 
             alt="Showcase Mockup" 
             className="w-full h-full object-cover rounded-xl"
           />

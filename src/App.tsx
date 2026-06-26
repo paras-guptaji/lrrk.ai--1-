@@ -325,7 +325,7 @@ export default function App() {
           {/* Glowing brand logo */}
           <a href="#hero" className="flex items-center gap-3 group">
             <img 
-              src="/images/logo.png" 
+              src="/images/logo.webp" 
               alt="Lrrk.ai Logo" 
               className="w-10 h-10 object-cover rounded-full shadow-[0_0_15px_rgba(255,154,0,0.3)] transition-transform duration-300 group-hover:scale-105"
             />
